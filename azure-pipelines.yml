@@ -1,13 +1,13 @@
-pool:
- vmImage: 'ubuntu-latest' 
-stages:
-* stage: Build
- jobs:
- - job: Build_Job
- steps:
- - task: Maven@3 
- inputs:
- mavenVersion: '3.x' 
- mavenPomFile: 'pom.xml' 
- goals: 'clean package'
- publishMavenArtifacts: true
+name: John Doe
+age: 30
+email: john.doe@example.com
+address:
+  street: 123 Main St
+  city: Anytown
+  state: CA
+  zip: 12345
+is_active: true
+hobbies:
+  - Reading
+  - Traveling
+  - Cooking
